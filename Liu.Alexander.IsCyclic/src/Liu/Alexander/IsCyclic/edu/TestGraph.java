@@ -51,7 +51,14 @@ public class TestGraph {
 			 * 	The graph is connected iff all vertices have been visited.
 			 */
 			AbstractGraph.Tree dfsTree = graph.dfs(0);
-			System.out.println(dfsTree.getNumberOfVerticesFound());
+			//System.out.println(dfsTree.getNumberOfVerticesFound());
+			
+			if (dfsTree.getNumberOfVerticesFound() == vertices) {
+				System.out.println("The graph is connected");
+			}
+			else {
+				System.out.println("The graph is not connected");
+			}
 			
 	}
 }
